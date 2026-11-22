@@ -164,7 +164,11 @@ function splitBody(body: string[]): { o: string[]; n: NewLine[] } {
   const o: string[] = [];
   const n: NewLine[] = [];
   for (const bl of body) {
-    if (bl.startsWith(' ')) {
+    if (bl === '') {
+      // An empty body line is a context line whose text is empty (section 6/8).
+      o.push('');
+      n.push({ text: '', ctx: o.length - 1 });
+    } else if (bl.startsWith(' ')) {
       o.push(bl.slice(1));
       n.push({ text: bl.slice(1), ctx: o.length - 1 });
     } else if (bl.startsWith('-')) {
@@ -181,7 +185,7 @@ function splitBody(body: string[]): { o: string[]; n: NewLine[] } {
 function noNewlineAfterLast(body: string[]): boolean {
   let last = -1;
   for (let i = 0; i < body.length; i += 1) {
-    if (body[i]!.startsWith(' ') || body[i]!.startsWith('+')) last = i;
+    if (body[i] === '' || body[i]!.startsWith(' ') || body[i]!.startsWith('+')) last = i;
   }
   if (last < 0) return false;
   const next = body[last + 1];
