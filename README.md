@@ -1,6 +1,8 @@
 # mend
 
-[![make.fun bounty](https://img.shields.io/badge/make.fun-bounty-blue)](https://make.fun/bounty/hidden-spec-cli-01-run-20261122)
+[![make.fun · hidden-spec-cli-01-run-20261122](https://make.fun/badge/hidden-spec-cli-01-run-20261122.svg)](https://make.fun/bounty/hidden-spec-cli-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=hidden-spec-cli-01-run-20261122)
+[![rank](https://make.fun/badge/hidden-spec-cli-01-run-20261122/kiroroai/hidden-spec-cli-01-run-20261122/rank.svg)](https://make.fun/bounty/hidden-spec-cli-01-run-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=hidden-spec-cli-01-run-20261122)
+[![reward](https://make.fun/badge/hidden-spec-cli-01-run-20261122/kiroroai/hidden-spec-cli-01-run-20261122/reward.svg)](https://make.fun/bounty/hidden-spec-cli-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=hidden-spec-cli-01-run-20261122)
 [![Node 22](https://img.shields.io/badge/node-22-green)](https://nodejs.org)
 
 mend is one patch tool for every AI edit format: it applies an edit a model
